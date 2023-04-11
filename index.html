@@ -28,7 +28,7 @@
 
     /*Body Styles*/
     body {
-      margin: 0 auto;
+      margin: 0 auto 3em;
     }
 
     section {
@@ -109,6 +109,43 @@
 
     span:hover, span a:hover {
       color: #0f7fd7;
+    }
+
+    /*Media Queries*/
+    @media screen and (max-width: 400px){
+      
+      h1 {
+        font-size: 24px;
+      }
+
+      p, li, a {
+        font-size: 18px;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+
+      section > ul > li {
+        font-size: 20px;
+      }
+
+      section > ul > li > ul > li {
+        font-size: 20px;
+      }
+
+      section li.hl ul li {
+        margin-top: 1em;
+      }
+
+      section li.ll ul li {
+        margin-top: 0.5em;
+      }
+
+      div.lh {
+        text-align: center;
+        margin-left: -1em;
+      }
     }
 
   </style>
